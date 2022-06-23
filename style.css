@@ -51,6 +51,12 @@ HEADER */
     color: #1c1c1c;
 }
 
+.header__hover:hover {
+    color: #f38120;
+    border-bottom: 1px solid #f38120;
+    transition: 0.25s;
+}
+
 
 /* ________________
 INFO */
@@ -79,6 +85,10 @@ INFO */
     font-size: 12px;
     line-height: 18px;
     color: #1c1c1c;
+}
+
+.info__hover:hover {
+    width: 50px;
 }
 
 .info__pdf {
