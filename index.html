@@ -16,7 +16,7 @@
 <body>
     <div class="wrapper">
         <header id="header">
-            <nav>
+            <nav class="none">
                 <ul class="header__menu">
                     <li class="header__menu--list">
                         <a href="#" class="header__menu--link"><img src="./assets/img/home.svg" alt="home" /></a>
@@ -42,13 +42,13 @@
                 </ul>
             </nav>
             <section class="container info">
-                <div class="info__inf">
+                <div class="info__inf none">
                     <p class="info__text">
                         <span class="span__bold">Кровельные и фасадные материалы</span>в Тюмени и области.
                     </p>
                     <p class="info__text">Профессиональный монтаж с 2010 года.</p>
                 </div>
-                <div class="info__pdf">
+                <div class="info__pdf none">
                     <a href="#" class="info__pdf--link"><img src="./assets/img/pdf1.svg" width="45px" alt="pdf" />
                     </a>
                     <a href="#" class="info__pdf--link"><span class="info__pdf--span"> Скачать прайс-каталог</span>
@@ -58,7 +58,7 @@
                 <div class="logo">
                     <a href="#"><img src="./assets/img/logo.png" alt="logo" /></a>
                 </div>
-                <div class="info__social">
+                <div class="info__social none">
                     <p class="info__social--text info__social--before">
                         Отвечаем <span class="info__social--span"> онлайн</span>
                     </p>
@@ -107,7 +107,7 @@
 				</div>
 				<section class="buy">
 					<p class="buy__text">
-						Продажа <span class="buy__span">кровельных материалов</span> в
+						Продажа <span class="buy__span"> кровельных материалов </span> в
 						Тюмени и Тюменской области
 					</p>
 
@@ -130,95 +130,94 @@
 						<p class="buy__inform--text">
 							<span class="buy__inform--span"
 								>Ответьте на несколько вопросов и получите</span
-							>сметную стоимость и 3 подарка за экономию нашего времени
+							> сметную стоимость и 3 подарка за экономию нашего времени
 						</p>
 					</div>
 				</section>
 			</section>
 		</div>
 		<div id="popup" class="popup popup__style">
-			<!-- <a href="#header" class="popup__area"></a> -->
-                    <div class="popup__body">
+                    <!-- <div class="popup__body">
                         <div class="popup__content">
                             <a href="#" class="popup__close close-popup">
                                 <img src="./assets/img/x.svg" alt="" /></a>
-                            <div class="popup__title">
-                                <p class="popup__title-title">Быстро </br> оставить заявку</p>
-                                <p class="popup__title-backcall">
-                                    Введите номер, мы позвоним вам в течение 10 минут в рабочее время
-                                </p>
-                                <p class="popup__title-timework">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
-                            </div>
-                            <div class="form">
-                                <p class="form__number">Введите номер телефона</p>
-                                <input class="form__input phone" name="telephone" type="text" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _" />
-                                <a class='popup-link ' href="#popup_2"><button class="btn__form buy__btn--orange" type="submit">
+                    <div class="popup__title">
+                        <p class="popup__title-title">Быстро </br> оставить заявку</p>
+                        <p class="popup__title-backcall">
+                            Введите номер, мы позвоним вам в течение 10 минут в рабочее время
+                        </p>
+                        <p class="popup__title-timework">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
+                    </div>
+                    <div class="form">
+                        <p class="form__number">Введите номер телефона</p>
+                        <input class="form__input phone" name="telephone" type="text" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _" />
+                        <a class='popup-link ' href="#popup_2"><button class="btn__form buy__btn--orange" type="submit">
 							<p class="form__callme">Позвоните мне</p>
 							<img src="./assets/img/arr.svg" alt="arrow" />
 						</button></a>
-                                <div class="approve">
-                                    <div>
-                                        <input class="custom-checkbox" rec type="checkbox" checked name="happy" id="happy" />
-                                        <label for="happy"></label>
-                                    </div>
-
-                                    <p class="approve__text">
-                                        Нажимая кнопку вы соглашаетесь с условиями
-                                        <span> Политики конфиденциальности</span>
-                                    </p>
-                                </div>
+                        <div class="approve">
+                            <div>
+                                <input class="custom-checkbox" rec type="checkbox" checked name="happy" id="happy" />
+                                <label for="happy"></label>
                             </div>
+
+                            <p class="approve__text">
+                                Нажимая кнопку вы соглашаетесь с условиями
+                                <span> Политики конфиденциальности</span>
+                            </p>
                         </div>
                     </div>
-                    <div class="popup__body">
-                        <div class="popup__content">
-                            <a href="#" class="popup__close close-popup">
-                                <img src="./assets/img/x.svg" alt="" /></a>
-                            <div class="popup__title">
-                                <p class="popup__title-title">Быстро </br> оставить заявку</p>
-                                <p class="popup__title-backcall">
-                                    Введите номер, мы позвоним вам в течение 10 минут в рабочее время
-                                </p>
-                                <p class="popup__title-timework">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
-                            </div>
-                            <div class="form">
-                                <p class="form__number">Введите номер телефона</p>
-                                <input class="form__input phone" name="telephone" type="text" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _" />
-                                <a class='popup-link ' href="#popup"><button class="btn__form buy__btn--orange" type="submit">
+                </div>
+    </div> -->
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#" class="popup__close close-popup">
+                <img src="./assets/img/x.svg" alt="" /></a>
+            <div class="popup__title">
+                <p class="popup__title-title">Быстро </br> оставить заявку</p>
+                <p class="popup__title-backcall">
+                    Введите номер, мы позвоним вам в течение 10 минут в рабочее время
+                </p>
+                <p class="popup__title-timework">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
+            </div>
+            <div class="form">
+                <p class="form__number">Введите номер телефона</p>
+                <input class="form__input phone" name="telephone" type="text" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _" />
+                <a class='popup-link ' href="#popup_2"><button class="btn__form buy__btn--orange" type="submit">
 							<p class="form__callme">Позвоните мне</p>
 							<img src="./assets/img/arr.svg" alt="arrow" />
 						</button></a>
-                                <div class="approve">
-                                    <div>
-                                        <input class="custom-checkbox" type="checkbox" checked name="happy" id="happy" />
-                                        <label for="happy"></label>
-                                    </div>
-
-                                    <p class="approve__text">
-                                        Нажимая кнопку вы соглашаетесь с условиями
-                                        <span> Политики конфиденциальности</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="approve">
+                    <div>
+                        <input class="custom-checkbox" type="checkbox" checked name="happy" id="happy" />
+                        <label for="happy"></label>
                     </div>
+
+                    <p class="approve__text">
+                        Нажимая кнопку вы соглашаетесь с условиями
+                        <a href="# " class=" approve__text--style"><span> Политики конфиденциальности</span></a>
+                    </p>
                 </div>
-                <div id="popup_2" class="popup popup__style">
-                    <!-- <a href="#header" class="popup__area"></a> -->
-                    <div class="popup__body">
-                        <div class="popup__content popup2__content">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="popup_2" class="popup popup__style">
+        <!-- <a href="#header" class="popup__area"></a> -->
+        <div class="popup__body">
+            <div class="popup__content popup2__content">
 
-                            <div class="popup__title">
-                                <p class="popup__title-title">Спасибо, </br> ваша заявка принята!</br> Мы свяжемся с вами в ближайшее время.</p>
+                <div class="popup__title">
+                    <p class="popup__title-title">Спасибо, </br> ваша заявка принята!</br> Мы свяжемся с вами в ближайшее время.</p>
 
-                            </div>
-
-
-                        </div>
-                    </div>
                 </div>
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                <script src=" ./index.js "></script>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src=" ./index.js "></script>
 </body>
 
 </html>

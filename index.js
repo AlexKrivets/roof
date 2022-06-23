@@ -3,17 +3,21 @@ const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
 
 let unlock = true;
-
+let checked = true;
+const checkbox = document.querySelector('.custom-checkbox');
+checkbox.addEventListener('click', () => (checked = !checked));
 const timeout = 800;
 
 if (popupLinks.length > 0) {
     for (let index = 0; index < popupLinks.length; index++) {
         const popupLink = popupLinks[index];
         popupLink.addEventListener('click', function(e) {
-            const popupName = popupLink.getAttribute('href').replace('#', '');
-            const curentPopup = document.getElementById(popupName);
-            popupOpen(curentPopup);
-            e.preventDefaul();
+            if (checked) {
+                const popupName = popupLink.getAttribute('href').replace('#', '');
+                const curentPopup = document.getElementById(popupName);
+                popupOpen(curentPopup);
+                e.preventDefault();
+            } else e.preventDefault();
         });
     }
 }
@@ -23,7 +27,7 @@ if (popupCloseIcon.length > 0) {
         const el = popupCloseIcon[index];
         el.addEventListener('click', function(e) {
             popupClose(el.closest('.popup'));
-            e.preventDefaul();
+            e.preventDefault();
         });
     }
 }

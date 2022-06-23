@@ -379,6 +379,10 @@ POPUP */
     transition: all 0.8s ease 0s;
 }
 
+.popup-link {
+    text-decoration: none;
+}
+
 .popup.open {
     opacity: 1;
     visibility: visible;
@@ -514,6 +518,8 @@ POPUP */
     align-items: center;
     letter-spacing: 0.02em;
     color: #a7a7a7;
+    box-shadow: 0px 0px 50px rgb(0 0 0 / 5%);
+    border: 1px solid gray;
 }
 
 input::placeholder {
@@ -537,6 +543,10 @@ input::placeholder {
     line-height: 21px;
     color: #1c1c1c;
     margin-top: 19px;
+}
+
+.approve__text--style {
+    text-decoration: none;
 }
 
 .approve__text span {
@@ -589,10 +599,6 @@ input::placeholder {
     }
     .buy__span {
         font-size: 40px;
-    }
-    .buy__btn p {
-        font-size: 12px;
-        padding: 0;
     }
     .services {
         margin-top: 0;
@@ -659,40 +665,5 @@ input::placeholder {
 }
 
 @media (max-width: 768px) {}
-
-@media (max-width: 480px) {
-    body {
-        background: url(./assets/img/bgmob.jpg);
-        background-size: cover;
-        position: relative;
-    }
-    nav {
-        display: none;
-    }
-    .info__inf,
-    .info__pdf,
-    .info__social,
-    .services__text:not(:first-child) {
-        display: none;
-    }
-    .logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .info__socia--time {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .buy {
-        position: absolute;
-    }
-    .services__pos {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-}
 
 @media (max-width: 320px) {}
