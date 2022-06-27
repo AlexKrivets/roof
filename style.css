@@ -676,4 +676,8 @@ input::placeholder {
 
 @media (max-width: 768px) {}
 
-@media (max-width: 320px) {}
+@media (max-width: 420px) {
+    .none {
+        display: none;
+    }
+}
